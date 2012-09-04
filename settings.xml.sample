@@ -1,0 +1,24 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <profiles>
+        <profile>
+            <id>themoviedb</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <themoviedb.api.key>API_KEY</themoviedb.api.key>
+
+                <!-- The session id is needed for tests which needs a valid session -->
+                <themoviedb.session.id>SESSION_ID</themoviedb.session.id>
+
+                <themoviedb.proxy.enabled>false</themoviedb.proxy.enabled>
+                <themoviedb.proxy.host></themoviedb.proxy.host>
+                <themoviedb.proxy.port></themoviedb.proxy.port>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
