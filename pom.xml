@@ -112,6 +112,8 @@
 				<version>0.7</version>
 				<configuration>
 					<server>github</server>
+					<repositoryName>themoviedb</repositoryName>
+					<repositoryOwner>dreske</repositoryOwner>
 					<message>Creating site for ${project.name}</message>
 				</configuration>
 			</plugin>
@@ -122,6 +124,8 @@
 				<version>0.6</version>
 				<configuration>
 					<server>github</server>
+					<repositoryName>themoviedb</repositoryName>
+					<repositoryOwner>dreske</repositoryOwner>
 					<description>${project.version} release of ${project.name}</description>
 					<override>true</override>
 					<includeAttached>true</includeAttached>
