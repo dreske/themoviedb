@@ -121,6 +121,28 @@
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.7</version>
+				<configuration>
+					<server>github</server>
+					<message>Creating site for ${project.name}</message>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>downloads-maven-plugin</artifactId>
+				<version>0.6</version>
+				<configuration>
+					<server>github</server>
+					<description>${project.version} release of ${project.name}</description>
+					<override>true</override>
+					<includeAttached>true</includeAttached>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -131,6 +153,12 @@
 			<url>http://www.dirkreske.de</url>
 		</developer>
 	</developers>
+
+	<scm>
+		<connection>scm:git:git@github.com:dreske/themoviedb.git</connection>
+		<url>scm:git:git@github.com:dreske/themoviedb.git</url>
+		<developerConnection>scm:git:git@github.com:dreske/themoviedb.git</developerConnection>
+	</scm>
 
 	<issueManagement>
 		<system>github</system>
