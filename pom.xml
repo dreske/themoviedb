@@ -8,6 +8,7 @@
 	<artifactId>themoviedb</artifactId>
 	<name>TheMovieDB API Client</name>
 	<version>3.0-SNAPSHOT</version>
+	<url>https://github.com/dreske/themoviedb</url>
 
 	<dependencies>
 		<dependency>
