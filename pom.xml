@@ -162,6 +162,7 @@
 							<report>project-team</report>
 							<report>issue-tracking</report>
 							<report>dependencies</report>
+							<report>scm</report>
 						</reports>
 					</reportSet>
 				</reportSets>
