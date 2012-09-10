@@ -122,7 +122,7 @@ interface TmdbServiceAPI {
 	 * @return the latest movie
 	 */
 	@GET
-	@Path("/latest/movie")
+	@Path("/movie/latest")
 	@Produces(MediaType.APPLICATION_JSON)
 	MovieDetailed getLatestMovie(@QueryParam("api_key") String apiKey);
 
